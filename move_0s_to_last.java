@@ -22,7 +22,7 @@ Output : 1 2 3 6 0 0 0
 	{
 		int arr[] = 
 		{
-			0, 0, 9, 8, 4, 0, 0, 2,
+			0, 0, 9, 8, 4, -1,0, 0, 2,
 			7, 0, 6, 0, 9
 		}
 		;
@@ -34,43 +34,27 @@ Output : 1 2 3 6 0 0 0
 		ArrayList<Integer> al=new ArrayList<Integer>();
 		
 		
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i]==0) {
-				
-			
-			for (int j = i+1; j < arr.length; j++) 
-			{
-				if (arr[j]!=0)
-				{
-					int temp=arr[i];
-					arr[i]=arr[j];
-					arr[j]=temp;
-				}
-			}
-			}
-			
-		}
 		
-//		for(int i=0; i<arr.length; i++)
-//		{
-//			if(arr[i]!=0)
-//			al.add(arr[i]);
-//		}
-//		for(int i=0; i<arr.length; i++)
-//		{
-//			if(arr[i]==0)
-//			al.add(arr[i]);
-//		}
-//		System.out.print("Original array: ");
-//		for(int i=0; i<arr.length; i++)
-//		{
-//			System.out.print(arr[i]+" ");
-//		}
-//		System.out.println();
-//		System.out.print("Modified array: ");
 		for(int i=0; i<arr.length; i++)
 		{
-			//arr[i]=al.get(i);
+			if(arr[i]!=0)
+			al.add(arr[i]);
+		}
+		for(int i=0; i<arr.length; i++)
+		{
+			if(arr[i]==0)
+			al.add(arr[i]);
+		}
+		System.out.print("Original array: ");
+		for(int i=0; i<arr.length; i++)
+		{
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+		System.out.print("Modified array: ");
+		for(int i=0; i<arr.length; i++)
+		{
+			arr[i]=al.get(i);
 			System.out.print(arr[i]+" ");
 		}
 	}
