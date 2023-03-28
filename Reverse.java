@@ -31,14 +31,15 @@ Output:
 		ArrayList<Integer> al2=new ArrayList<Integer>();
 		for(int i=0; i<a.length; i=i+k)
 		{
+		
 			ArrayList<Integer> al=new ArrayList<Integer>();
 			for(int j=i; j<i+k && j<a.length; j++)
 			{
 				al.add(a[j]);
 			}
-			Collections.reverse(al);
-			al2.addAll(al);
-			al.clear();
+		      Collections.reverse(al);
+			  al2.addAll(al);
+			  al.clear();
 		}
 		for(int i=0; i<al2.size(); i++)
 		{
