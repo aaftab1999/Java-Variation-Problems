@@ -5,13 +5,13 @@ public class CountOnFingers {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int n=7;
+		int n=16;
 		int count=5;
 		int index=0;
 		if(n<=5)
 			System.out.println(n);
 		else {
-			for(int i=0;;i++) {
+		while(true) {
 				 
 	         index=findOnfinger(n,count);
 	         count=count+8;

@@ -19,7 +19,7 @@ public class IntersectionOfTwoArrays {
         add(hs1,a);
         add(hs,b);
         hs1.retainAll(hs);
-        System.out.println(hs);
+        System.out.println(hs1);
         
         
 	}
