@@ -25,7 +25,7 @@ Output : No
 	//StartOfMainMethod
 	public static void main(String[] args) 
 	{
-		String str = "99333";
+		String str = "69354";
 		myCode(str);
 	}
 	//EndOfMainMethod
