@@ -25,9 +25,9 @@ Number because the sum of digits 1 and 7 and 1 is 9(1+7+1) and 171 is divisible 
 	{
 		//write code here
 		int count1=0;
-		for(int i=start; i<start+100; i++)
+		for(int i=start; ; i++)
 		{
-			int origin=i,j=i;
+			int j=i;
 			int sum=0, last=0;
 			while(j>0)
 			{
@@ -35,10 +35,10 @@ Number because the sum of digits 1 and 7 and 1 is 9(1+7+1) and 171 is divisible 
 				sum+=last;
 				j/=10;
 			}
-			if(origin%sum==0)
+			if(i%sum==0)
 			{
 				count1++;
-				System.out.println(origin+" harshad number");
+				System.out.println(i+" harshad number");
 			}
 			if(count1==count)
 			break;
