@@ -8,7 +8,7 @@ public class primeFactor {
 		// TODO Auto-generated method stub
 		int n=250;
 		ArrayList<Integer> al=new ArrayList<Integer>();
-	/*	int i=2;
+		int i=2;
 		while (n>1)
 		{
 			if(n%i==0)
@@ -20,11 +20,9 @@ public class primeFactor {
 				i++;
 			
 		}
-		System.out.println(al);*/
+		System.out.println(al);
 		
-		for (int i = 0; i < args.length; i++) {
-			
-		}
+		
 
 	}
 
