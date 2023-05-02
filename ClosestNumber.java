@@ -27,6 +27,7 @@ Explanation:
 	{
 		int N = 13 , M = 4;
 		myCode(N, M);
+		myCode1(N,M);
 	}
 	//EndOfMainMethod
 	public static void myCode(int N, int M)
@@ -40,7 +41,29 @@ Explanation:
 			}
 		}
 	}
+	
+//more sensible logic
+	public static void myCode1(int N, int M)
+	{
+		int prev=N;
+		int next=N;
+		while(true)
+		{
+			if(--prev%M==0)
+			{
+				System.out.println(prev);
+				break;
+			}
+			else if(++next%M==0)
+			{
+				System.out.println(next);
+				break;
+			}
+		}
+	}
 }
+
+
 
 /*
 Input Given:
